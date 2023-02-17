@@ -150,6 +150,7 @@ header .user:hover {
 }
 header .user img {
   width: 100%;
+  filter: opacity(0.5) drop-shadow(0 0 0 var(--color-primary));
 }
 
 footer {
@@ -323,6 +324,7 @@ footer a:hover {
   margin: 0 auto 20px;
   border-radius: 10px;
   background-size: cover;
+  filter: opacity(0.5) drop-shadow(0 0 0 var(--color-primary));
 }
 .about .name {
   font-size: 40px;
@@ -340,4 +342,11 @@ footer a:hover {
 }
 .about a:hover {
   text-decoration: underline;
+}
+
+.not-found h1 {
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--color-white-10);
+  text-align: center;
 }
