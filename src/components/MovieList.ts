@@ -33,7 +33,7 @@ export default class MovieList extends Component {
 
     const loader = this.el.querySelector(".the-loader");
     movieStore.state.loading
-      ? loader.classList.remove("hide")
-      : loader.classList.add("hide");
+      ? loader?.classList.remove("hide")
+      : loader?.classList.add("hide");
   }
 }

@@ -1,6 +1,14 @@
 import { Store } from "../core/core";
 
-export default new Store({
+interface State {
+  photo: string;
+  name: string;
+  email: string;
+  github: string;
+  repository: string;
+}
+
+export default new Store<State>({
   photo: "https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png",
   name: "KH / KimKyunHa",
   email: "seonkyu93@gmail.com",

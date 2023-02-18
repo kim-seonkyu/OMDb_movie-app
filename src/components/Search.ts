@@ -9,22 +9,22 @@ export default class Search extends Component {
         value="${movieStore.state.searchText}" 
         placeholder="Enter the movie title to search!" />
       <button class="btn btn-primary">
-          Search!
+        Search!
       </button>
     `;
 
     const input = this.el.querySelector("input");
-    input.addEventListener("input", () => {
+    input?.addEventListener("input", () => {
       movieStore.state.searchText = input.value;
     });
-    input.addEventListener("keydown", (event) => {
+    input?.addEventListener("keydown", (event) => {
       if (event.key === "Enter" && movieStore.state.searchText.trim()) {
         searchMovies(1);
       }
     });
 
     const btn = this.el.querySelector(".btn");
-    btn.addEventListener("click", () => {
+    btn?.addEventListener("click", () => {
       if (movieStore.state.searchText.trim()) {
         searchMovies(1);
       }
